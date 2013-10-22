@@ -16,6 +16,11 @@ public class Task {
 	public void tick() {
 		timePriority--;
 	}
+	
+	public boolean process() {
+		timeRequired--;
+		return timeRequired == 0;
+	}
 
 	public int getId() {
 		return id;
